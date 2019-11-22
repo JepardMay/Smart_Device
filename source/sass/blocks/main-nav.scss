@@ -1,0 +1,163 @@
+.main-nav {
+  max-width: 1920px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 34px;
+  padding-right: 12.6%;
+  padding-left: 13.3%;
+}
+
+.main-nav__toggle {
+  position: relative;
+  width: 37px;
+  height: 14px;
+  margin-left: 8.4%;
+  margin-right: auto;
+  background-color: transparent;
+  border: none;
+
+  &:hover::before,
+  &:hover::after {
+    opacity: 0.4;
+  }
+
+  &:focus::before,
+  &:focus::after {
+    opacity: 0.8;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+
+    width: 37px;
+    height: 1px;
+
+    background-color: $contrast-text-color;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    top: 12px;
+  }
+}
+
+.main-nav__link {
+  @include font(16px, 18px);
+  display: flex;
+  color: $contrast-text-color;
+  margin-left: 6.1%;
+
+  &:hover,
+  &:hover {
+    opacity: 0.4;
+  }
+
+  &:focus,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:hover .main-nav__icon,
+  &:hover .main-nav__icon {
+    opacity: 0.4;
+  }
+
+  &:focus .main-nav__icon,
+  &:focus .main-nav__icon {
+    opacity: 0.8;
+  }
+}
+
+.main-nav__icon--email {
+  margin-right: 20px;
+}
+
+.main-nav__icon--phone {
+  margin-right: 16px;
+}
+
+.main-nav__callback {
+  @include font-bold;
+  @include font(14px, 16px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 45px;
+  margin-left: 3.5%;
+  padding: 0 1.9%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $contrast-text-color;
+  border: 1px solid $contrast-text-color;
+  border-radius: 5px;
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav {
+    padding-top: 19px;
+    padding-right: 3%;
+    padding-left: 3.3%;
+  }
+
+  .main-nav__toggle {
+    margin-left: auto;
+    margin-right: 0.5%;
+
+    &::before {
+      top: -1px;
+    }
+
+    &::after {
+      top: 10px;
+    }
+  }
+
+  .main-nav__link {
+    margin-left: 4.7%;
+  }
+
+  .main-nav__icon {
+    margin: 0;
+  }
+
+  .main-nav__icon--email {
+    width: 25px;
+    height: 18px;
+  }
+
+  .main-nav__icon--phone {
+    width: 24px;
+    height: 24px;
+  }
+
+  .main-nav__extra,
+  .main-nav__callback {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav {
+    padding-top: 15px;
+    padding-right: 4.5%;
+    padding-left: 4.8%;
+  }
+
+  .main-nav__toggle {
+    margin-right: 1%;
+  }
+
+  .main-nav__link {
+    margin-left: 7.8%;
+  }
+}

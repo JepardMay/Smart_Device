@@ -1,0 +1,9 @@
+@mixin font-bold {
+  font-family: $font-additional;
+  font-weight: 700;
+}
+
+@mixin font($size, $line) {
+  font-size: $size;
+  line-height: $line;
+}
