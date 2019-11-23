@@ -1,11 +1,24 @@
 .logo {
+  display: flex;
+}
+
+.logo--header {
   width: 202px;
   height: 52px;
 }
 
+.logo--footer {
+  width: 216px;
+  height: 52px;
+}
+
 @media (max-width: $mobile-width) {
-  .logo {
+  .logo--header {
     width: 38px;
     height: 38px;
+  }
+
+  .logo--footer {
+    width: 202px;
   }
 }

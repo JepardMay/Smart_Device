@@ -18,6 +18,12 @@
   background-color: transparent;
   border: none;
 
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
   &:hover::before,
   &:hover::after {
     opacity: 0.4;
@@ -65,16 +71,6 @@
   &:focus {
     opacity: 0.8;
   }
-
-  &:hover .main-nav__icon,
-  &:hover .main-nav__icon {
-    opacity: 0.4;
-  }
-
-  &:focus .main-nav__icon,
-  &:focus .main-nav__icon {
-    opacity: 0.8;
-  }
 }
 
 .main-nav__icon--email {
@@ -100,6 +96,14 @@
   color: $contrast-text-color;
   border: 1px solid $contrast-text-color;
   border-radius: 5px;
+
+  &:hover {
+    opacity: 0.4;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
 }
 
 @media (max-width: $tablet-width) {

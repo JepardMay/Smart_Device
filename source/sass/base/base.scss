@@ -8,6 +8,11 @@ html {
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -36,6 +41,9 @@ a {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
   position: relative;
   font-family: $font-main;
 
@@ -43,4 +51,8 @@ body {
   color: $main-text-color;
 
   background-color: $light-background-color;
+}
+
+main {
+  flex: 1 0 auto;
 }

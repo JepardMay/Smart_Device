@@ -1,0 +1,45 @@
+.social {
+  min-width: 124px;
+  margin-left: auto;
+}
+
+.social__list {
+  @include list-style;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin-right: 6.2%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .social {
+    margin-top: 12px;
+    min-width: 120px;
+  }
+
+  .social__item {
+    margin-right: 13%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .social {
+    margin: 0;
+  }
+}
