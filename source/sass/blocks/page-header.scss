@@ -3,4 +3,9 @@
   width: 100%;
   color: $contrast-text-color;
   background-color: $dark-color;
+  background-image: url("../../img/screen-pattern.png;"),
+    url("../../img/screen-background.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
 }
