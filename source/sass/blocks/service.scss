@@ -1,0 +1,184 @@
+.service {
+  margin: 0 auto;
+  width: 100%;
+  padding: 89px 19.5%;
+  padding-bottom: 82px;
+  color: $contrast-color;
+  background-color: $dark-color;
+}
+
+.service__text {
+  @include font(36px, 51px);
+  display: block;
+  margin-bottom: 52px;
+  font-family: $font-additional;
+  font-weight: normal;
+}
+
+.service__list {
+  @include list-style();
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service__item {
+  display: flex;
+  position: relative;
+  width: 31.6%;
+  min-height: 614px;
+  margin-bottom: 45px;
+  margin-right: 2.5%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.service__item--production {
+  background-image: url("../../img/service-production.png");
+}
+
+.service__item--installation {
+  background-image: url("../../img/service-installation.png");
+}
+
+.service__item--components {
+  background-image: url("../../img/service-components.png");
+}
+
+.service__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: $contrast-color;
+  border: 1px solid transparent;
+
+  &:hover {
+    border-color: $contrast-color;
+    text-decoration: underline;
+  }
+
+  &:hover .service__arrow {
+    background-color: $contrast-color;
+    fill: $bright-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.service__title {
+  @include font(20px, 30px);
+  width: 100%;
+  margin: 48px 11.6%;
+  margin-right: 41%;
+  font-family: $font-additional;
+  font-weight: normal;
+}
+
+.service__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 63px;
+  height: 63px;
+  background-color: $bright-color;
+}
+
+.service__icon {
+  fill: $contrast-color;
+}
+
+@media (max-width: $tablet-width) {
+  .service {
+    padding: 50px 3.3%;
+    padding-bottom: 76px;
+  }
+
+  .service__text {
+    @include font(32px, 45px);
+    width: 89%;
+    margin-bottom: 45px;
+  }
+
+  .service__item {
+    width: 100%;
+    min-height: 251px;
+    margin-right: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .service__item--production {
+    background-image: url("../../img/service-production-tablet.png");
+  }
+
+  .service__item--installation {
+    background-image: url("../../img/service-installation-tablet.png");
+  }
+
+  .service__item--components {
+    background-image: url("../../img/service-components-tablet.png");
+  }
+
+  .service__title {
+    @include font(20px, 30px);
+    margin: 38px 5.9%;
+    margin-right: 70%;
+  }
+
+  .service__title--components {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .service {
+    padding: 44px 4.6%;
+    padding-bottom: 61px;
+  }
+
+  .service__text {
+    @include font(27px, 39px);
+    width: 100%;
+    margin-left: 2.7%;
+    margin-bottom: 38px;
+  }
+
+  .service__item {
+    min-height: 243px;
+    margin-bottom: 29px;
+  }
+
+  .service__item--production {
+    background-image: url("../../img/service-production-mobile.png");
+  }
+
+  .service__item--installation {
+    background-image: url("../../img/service-installation-mobile.png");
+  }
+
+  .service__item--components {
+    background-image: url("../../img/service-components-mobile.png");
+  }
+
+  .service__title {
+    @include font(19px, 30px);
+    margin: 16px 11.9%;
+    margin-right: 30%;
+  }
+
+  .service__title--components {
+    margin-top: 26px;
+  }
+}
