@@ -1,0 +1,154 @@
+.advantages {
+  margin: 0 auto;
+  width: 100%;
+  background-color: $contrast-color;
+}
+
+.advantages__list {
+  @include list-style;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 109px 18.9%;
+  padding-left: 19.7%;
+}
+
+.advantages__item {
+  position: relative;
+  width: 48.7%;
+  min-height: 299px;
+  margin-right: 2.6%;
+  margin-bottom: 30px;
+  padding: 95px 3.5%;
+  padding-right: 3.8%;
+  padding-bottom: 65px;
+  border: 1px solid $border-color;
+  border-left: 3px solid $bright-color;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:hover .advantages__title {
+    color: $contrast-color;
+    background-color: $bright-color;
+  }
+
+  &:hover .advantages__icon {
+    fill: $contrast-color;
+  }
+}
+
+.advantages__icon {
+  position: absolute;
+  left: 7.2%;
+  fill: $bright-color;
+}
+
+.advantages__icon--stopwatch {
+  top: 40px;
+}
+
+.advantages__icon--hired {
+  top: 44px;
+}
+
+.advantages__icon--detective {
+  top: 44px;
+}
+
+.advantages__icon--tag {
+  top: 40px;
+}
+
+.advantages__title {
+  @include font(24px, 34px);
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: $font-additional;
+  color: $bright-color;
+}
+
+.advantages__text {
+  @include font(16px, 22px);
+  margin: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .advantages__list {
+    padding: 53px 3%;
+  }
+
+  .advantages__item {
+    width: 47.9%;
+    min-height: 232px;
+    margin-right: 4.1%;
+    padding: 64px 3.4%;
+    padding-right: 2%;
+    padding-bottom: 15px;
+  }
+
+  .advantages__title {
+    margin-bottom: 8px;
+  }
+
+  .advantages__icon--stopwatch {
+    top: 23px;
+  }
+
+  .advantages__icon--hired {
+    top: 20px;
+  }
+
+  .advantages__icon--detective {
+    width: 32px;
+    height: 20px;
+    top: 26px;
+  }
+
+  .advantages__icon--tag {
+    top: 21px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages__list {
+    flex-direction: column;
+    padding: 37px 0;
+    padding-right: 5%;
+    padding-left: 4.3%;
+  }
+
+  .advantages__item {
+    width: 100%;
+    min-height: 220px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding-top: 67px;
+    padding-left: 7.9%;
+    padding-bottom: 21px;
+    padding-right: 2px;
+  }
+
+  .advantages__item--hired {
+    padding-right: 0;
+  }
+
+  .advantages__title {
+    @include font(20px, 28px);
+  }
+
+  .advantages__title--detective {
+    margin-top: -8px;
+    margin-bottom: -9px;
+    padding-right: 3%;
+  }
+
+  .advantages__text {
+    line-height: 21px;
+  }
+
+  .advantages__icon {
+    left: 8.2%;
+  }
+}

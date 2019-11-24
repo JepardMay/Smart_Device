@@ -44,7 +44,7 @@
     width: 37px;
     height: 1px;
 
-    background-color: $contrast-text-color;
+    background-color: $contrast-color;
   }
 
   &::before {
@@ -59,7 +59,7 @@
 .main-nav__link {
   @include font(16px, 18px);
   display: flex;
-  color: $contrast-text-color;
+  color: $contrast-color;
   margin-left: 6.1%;
 
   &:hover,
@@ -93,8 +93,8 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: $contrast-text-color;
-  border: 1px solid $contrast-text-color;
+  color: $contrast-color;
+  border: 1px solid $contrast-color;
   border-radius: 5px;
 
   &:hover {

@@ -1,11 +1,23 @@
 .page-header {
   margin: 0 auto;
   width: 100%;
-  color: $contrast-text-color;
+  color: $contrast-color;
   background-color: $dark-color;
   background-image: url("../../img/screen-pattern.png;"),
     url("../../img/screen-background.png");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center 0;
   background-size: cover;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    background-image: url("../../img/screen-background-tablet.jpg");
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-header {
+    background-image: url("../../img/screen-background-mobile.jpg");
+  }
 }

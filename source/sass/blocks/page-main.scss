@@ -1,0 +1,18 @@
+.page-main {
+  background-image: url("../img/background-pattern.png");
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  background-size: cover;
+}
+
+@media (max-width: $tablet-width) {
+  .page-main {
+    background-image: url("../img/background-pattern-tablet.png");
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-main {
+    background-image: url("../img/background-pattern-mobile.png");
+  }
+}
