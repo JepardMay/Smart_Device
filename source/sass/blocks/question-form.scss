@@ -1,0 +1,214 @@
+.question-form {
+  margin: 0 auto;
+  width: 100%;
+  padding: 89px 0;
+  padding-left: 50.5%;
+  padding-bottom: 110px;
+  color: $contrast-color;
+  background-color: $bright-color;
+  background-image: url("../img/paper_airplane.png");
+  background-repeat: no-repeat;
+  background-position: 25% 158px;
+}
+
+.question-form__text {
+  @include font(36px, 51px);
+  display: block;
+  margin-bottom: 8px;
+  font-family: $font-additional;
+  font-weight: normal;
+}
+
+.question-form__extra {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.question-form__form {
+  width: 61%;
+}
+
+.question-form__form input[type="checkbox"] + .question-form__agreement::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -32px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $contrast-color;
+}
+
+.question-form__form input[type="checkbox"]:checked + .question-form__agreement::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -28px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/check.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.question-form input,
+.question-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-family: inherit;
+  color: $contrast-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+
+  &::placeholder {
+    @include font(16px, 22px);
+    color: $contrast-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    color: $bright-color;
+  }
+}
+
+.question-form input {
+  height: 50px;
+}
+
+.question-form textarea {
+  height: 154px;
+}
+
+.question-form__section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 41px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.question-form__field {
+  width: 47.2%;
+  margin: 0;
+}
+
+.question-form__button {
+  @include font-bold;
+  @include font(14px, 16px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 45px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $contrast-color;
+  background-color: transparent;
+  border: 1px solid $contrast-color;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $bright-color;
+    background-color: $contrast-color;
+    outline: none;
+  }
+}
+
+.question-form__agreement {
+  @include font(14px, 16px);
+  position: relative;
+  display: block;
+  margin-top: 8px;
+  margin-left: 39px;
+  color: rgba(255, 255, 255, 0.8);
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    outline: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .question-form {
+    padding: 77px 11%;
+    padding-left: 12%;
+    padding-bottom: 101px;
+    background-image: none;
+  }
+
+  .question-form__text {
+    @include font(31px, 45px);
+    margin-bottom: 16px;
+  }
+
+  .question-form__extra {
+    margin: 0;
+    margin-bottom: 51px;
+  }
+
+  .question-form__form {
+    width: 100%;
+  }
+
+  .question-form__section {
+    &:last-child {
+      margin-top: 49px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .question-form {
+    padding: 27px 4.3%;
+    padding-bottom: 38px;
+    background-image: none;
+  }
+
+  .question-form__text {
+    @include font(28px, 39px);
+    margin-bottom: 9px;
+  }
+
+  .question-form__extra {
+    margin: 0;
+    margin-bottom: 21px;
+  }
+
+  .question-form textarea {
+    height: 104px;
+  }
+
+  .question-form__section {
+    flex-direction: column;
+    margin-top: 26px;
+
+    &:last-child {
+      margin-top: 28px;
+    }
+  }
+
+  .question-form__field {
+    width: 100%;
+  }
+
+  .question-form__field--half {
+    margin-bottom: 28px;
+  }
+
+  .question-form__agreement {
+    margin-top: 0;
+    margin-left: 33px;
+  }
+}

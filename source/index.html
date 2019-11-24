@@ -103,7 +103,7 @@
         HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
         Железных Дорог <span class="about-company__extra">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
           Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
-      <a class="about-company__more">Подробнее</a>
+      <a class="about-company__more" href="#">Подробнее</a>
     </section>
     <section class="service">
       <h2 class="visually-hidden">Товары и услуги</h2>
@@ -140,6 +140,39 @@
           </a>
         </li>
       </ul>
+    </section>
+    <section class="question-form">
+      <h2 class="visually-hidden">Задать вопрос</h2>
+      <b class="question-form__text">Остались вопросы? Задайте их нам!</b>
+      <p class="question-form__extra">Мы проконсультируем Вас бесплатно</p>
+      <div class="question-form__form">
+        <form method="post">
+          <div class="question-form__section">
+            <p class="question-form__field question-form__field--half">
+              <label class="visually-hidden" for="user-name">Имя</label>
+              <input id="user-name" type="text" name="user-name" placeholder="Имя">
+            </p>
+            <p class="question-form__field">
+              <label class="visually-hidden" for="user-phone">Телефон</label>
+              <input id="user-phone" type="tel" name="user-phone" placeholder="Телефон">
+            </p>
+          </div>
+          <div class="question-form__section">
+            <label class="visually-hidden" for="user-question">Ваш вопрос</label>
+            <textarea id="user-question" name="user-question" placeholder="Ваш вопрос"></textarea>
+          </div>
+          <div class="question-form__section">
+            <p class="question-form__field question-form__field--half">
+              <button class="question-form__button" type="submit">Задать вопрос</button>
+            </p>
+            <p class="question-form__field">
+              <input class="visually-hidden" id="user-agreement" type="checkbox" name="user-agreement" checked>
+              <label class="question-form__agreement" for="user-agreement">Я согласен на обработку персональных
+                данных</label>
+            </p>
+          </div>
+        </form>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
