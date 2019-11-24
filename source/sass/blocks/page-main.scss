@@ -1,8 +1,8 @@
 .page-main {
   background-image: url("../img/background-pattern.png");
   background-repeat: no-repeat;
-  background-position: 100% center;
-  background-size: cover;
+  background-position: 100% 0;
+  background-size: initial;
 }
 
 @media (max-width: $tablet-width) {

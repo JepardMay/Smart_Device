@@ -1,0 +1,123 @@
+.about-company {
+  margin: 0 auto;
+  width: 100%;
+  padding-right: 18.9%;
+  padding-left: 29.2%;
+  background-image: url("../img/background-year.png");
+  background-repeat: no-repeat;
+  background-position: 20.5% 6px;
+  background-size: initial;
+}
+
+.about-company__title {
+  @include font(36px, 51px);
+  margin: 0;
+  margin-bottom: 23px;
+  font-family: $font-additional;
+}
+
+.about-company__text {
+  margin: 0;
+  margin-bottom: 19px;
+
+  &:last-of-type {
+    margin-bottom: 37px;
+  }
+}
+
+.about-company__more {
+  @include font-bold;
+  @include font(14px, 16px);
+  display: inline-block;
+  min-height: 45px;
+  margin-bottom: 110px;
+  padding: 14px 5%;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $bright-color;
+  border: 1px solid $bright-color;
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    color: $contrast-color;
+    background-color: $bright-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about-company {
+    padding-right: 3%;
+    padding-left: 27.8%;
+    background-image: url("../img/background-year-tablet.png");
+    background-position: 0 -3px;
+  }
+
+  .about-company__title {
+    @include font(32px, 45px);
+    margin-bottom: 24px;
+  }
+
+  .about-company__text {
+    margin-bottom: 18px;
+
+    &:last-of-type {
+      margin-bottom: 33px;
+    }
+  }
+
+  .about-company__extra {
+    position: relative;
+    font-size: 0;
+
+    &::before {
+      content: "..";
+      position: absolute;
+      bottom: -6px;
+      left: -10px;
+
+
+      @include font(16px, 22px);
+      width: 16px;
+      height: 22px;
+    }
+  }
+
+  .about-company__more {
+    margin-bottom: 80px;
+    padding: 14px 9%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-company {
+    padding-right: 0;
+    padding-left: 4.7%;
+    background-image: none;
+  }
+
+  .about-company__title {
+    @include font(28px, 39px);
+    margin-bottom: 18px;
+  }
+
+  .about-company__text {
+    margin-bottom: 38px;
+    line-height: 21px;
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+
+  .about-company__more {
+    margin-bottom: 61px;
+    padding: 13px 16%;
+  }
+}

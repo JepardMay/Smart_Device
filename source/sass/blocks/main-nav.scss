@@ -97,12 +97,14 @@
   border: 1px solid $contrast-color;
   border-radius: 5px;
 
-  &:hover {
-    opacity: 0.4;
+  &:hover,
+  &:focus {
+    color: $bright-color;
+    background-color: $contrast-color;
   }
 
   &:focus {
-    opacity: 0.8;
+    outline: none;
   }
 }
 
