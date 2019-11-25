@@ -1,0 +1,120 @@
+.form {
+  margin: 0 auto;
+  width: 100%;
+  color: $contrast-color;
+  background-color: $bright-color;
+}
+
+.form__text {
+  @include font(36px, 51px);
+  display: block;
+  font-family: $font-additional;
+  font-weight: normal;
+}
+
+.form__extra {
+  margin: 0;
+}
+
+.form__form input[type="checkbox"] + .form__agreement::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $contrast-color;
+}
+
+.form__form input[type="checkbox"]:checked + .form__agreement::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/check.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  font-family: inherit;
+  color: $contrast-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+
+  &::placeholder {
+    @include font(16px, 22px);
+    color: $contrast-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: none;
+  }
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    color: $bright-color;
+  }
+}
+
+.form input {
+  height: 50px;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form__button {
+  @include font-bold;
+  @include font(14px, 16px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 45px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $contrast-color;
+  background-color: transparent;
+  border: 1px solid $contrast-color;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $bright-color;
+    background-color: $contrast-color;
+    outline: none;
+  }
+}
+
+.form__agreement {
+  @include font(14px, 16px);
+  position: relative;
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    outline: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .form__text {
+    @include font(31px, 45px);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .question-form__text {
+    @include font(28px, 39px);
+  }
+}

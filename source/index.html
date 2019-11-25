@@ -141,33 +141,34 @@
         </li>
       </ul>
     </section>
-    <section class="question-form">
+    <section class="question-form form">
       <h2 class="visually-hidden">Задать вопрос</h2>
-      <b class="question-form__text">Остались вопросы? Задайте их нам!</b>
-      <p class="question-form__extra">Мы проконсультируем Вас бесплатно</p>
-      <div class="question-form__form">
+      <b class="question-form__text form__text">Остались вопросы? Задайте их нам!</b>
+      <p class="question-form__extra form__extra">Мы проконсультируем Вас бесплатно</p>
+      <div class="question-form__form form__form">
         <form method="post">
-          <div class="question-form__section">
-            <p class="question-form__field question-form__field--half">
+          <div class="question-form__section form__section">
+            <p class="question-form__field question-form__field--half form__field">
               <label class="visually-hidden" for="user-name">Имя</label>
-              <input id="user-name" type="text" name="user-name" placeholder="Имя">
+              <input id="user-name" type="text" name="user-name" placeholder="Имя" required>
             </p>
-            <p class="question-form__field">
+            <p class="question-form__field form__field">
               <label class="visually-hidden" for="user-phone">Телефон</label>
-              <input id="user-phone" type="tel" name="user-phone" placeholder="Телефон">
+              <input id="user-phone" type="tel" name="user-phone" placeholder="Телефон" required>
             </p>
           </div>
-          <div class="question-form__section">
+          <div class="question-form__section form__section">
             <label class="visually-hidden" for="user-question">Ваш вопрос</label>
             <textarea id="user-question" name="user-question" placeholder="Ваш вопрос"></textarea>
           </div>
-          <div class="question-form__section">
-            <p class="question-form__field question-form__field--half">
-              <button class="question-form__button" type="submit">Задать вопрос</button>
+          <div class="question-form__section form__section">
+            <p class="question-form__field question-form__field--half form__field">
+              <button class="question-form__button form__button" type="submit">Задать вопрос</button>
             </p>
-            <p class="question-form__field">
-              <input class="visually-hidden" id="user-agreement" type="checkbox" name="user-agreement" checked>
-              <label class="question-form__agreement" for="user-agreement">Я согласен на обработку персональных
+            <p class="question-form__field form__field">
+              <input class="visually-hidden" id="user-agreement" type="checkbox" name="user-agreement" checked required>
+              <label class="question-form__agreement form__agreement" for="user-agreement">Я согласен на обработку
+                персональных
                 данных</label>
             </p>
           </div>
@@ -271,6 +272,37 @@
       </p>
     </div>
   </footer>
+
+  <section class="modal form">
+    <h2 class="visually-hidden">Заказать звонок</h2>
+    <b class="modal__text form__text">Закажите звонок</b>
+    <p class="modal__extra form__extra">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <div class="modal__form form__form">
+      <form method="post">
+        <div class="modal__section form__section">
+          <label class="visually-hidden" for="modal-name">Имя</label>
+          <input id="modal-name" type="text" name="modal-name" placeholder="Имя" required>
+        </div>
+        <div class="modal__section form__section">
+          <label class="visually-hidden" for="modal-phone">Телефон</label>
+          <input id="modal-phone" type="tel" name="modal-phone" placeholder="Телефон" required>
+        </div>
+        <div class="modal__section form__section">
+          <label class="visually-hidden" for="modal-question">Ваш вопрос</label>
+          <textarea id="modal-question" name="modal-question" placeholder="Ваш вопрос"></textarea>
+        </div>
+        <div class="modal__section form__section">
+          <button class="modal__button form__button" type="submit">Отправить</button>
+        </div>
+        <div class="modal__section form__section">
+          <input class="visually-hidden" id="modal-agreement" type="checkbox" name="modal-agreement" checked required>
+          <label class="modal__agreement form__agreement" for="modal-agreement">Я согласен на обработку персональных
+            данных</label>
+        </div>
+      </form>
+    </div>
+  </section>
+  <div class="overlay"></div>
 </body>
 
 </html>
