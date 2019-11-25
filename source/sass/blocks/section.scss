@@ -23,6 +23,7 @@
 .section__item {
   @include font(15px, 25px);
   margin: 0;
+  padding-right: 5px;
 }
 
 .section__link {

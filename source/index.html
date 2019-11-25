@@ -7,6 +7,18 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart-Device</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+
+  </script>
+  <script src="js/picturefill.min.js" async></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>
+    svg4everybody(); // run it now or whenever you are ready
+
+  </script>
+  <script src="js/svgxuse.min.js" defer></script>
 </head>
 
 <body>
@@ -101,8 +113,10 @@
         мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
       <p class="about-company__text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
         HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
-        Железных Дорог <span class="about-company__extra">(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
-          Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
+        Железных Дорог
+        <span class="about-company__extra"> (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
+          Среди наших клиентов крупнейшие Производители светотехники России.</span>
+      </p>
       <a class="about-company__more" href="#">Подробнее</a>
     </section>
     <section class="service">
@@ -113,7 +127,7 @@
           <a class="service__link" href="#">
             <h3 class="service__title">Производство печатных плат</h3>
             <div class="service__arrow">
-              <svg class="service__icon" width="8" height="4">
+              <svg class="service__icon" width="8" height="16">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
               </svg>
             </div>
@@ -123,7 +137,7 @@
           <a class="service__link" href="#">
             <h3 class="service__title">Монтаж печатных плат</h3>
             <div class="service__arrow">
-              <svg class="service__icon" width="8" height="4">
+              <svg class="service__icon" width="8" height="16">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
               </svg>
             </div>
@@ -133,7 +147,7 @@
           <a class="service__link" href="#">
             <h3 class="service__title service__title--components">Комплектующие для светотехники</h3>
             <div class="service__arrow">
-              <svg class="service__icon" width="8" height="4">
+              <svg class="service__icon" width="8" height="16">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
               </svg>
             </div>
@@ -159,7 +173,7 @@
           </div>
           <div class="question-form__section form__section">
             <label class="visually-hidden" for="user-question">Ваш вопрос</label>
-            <textarea id="user-question" name="user-question" placeholder="Ваш вопрос"></textarea>
+            <textarea id="user-question" name="user-question" placeholder="Ваш вопрос" required></textarea>
           </div>
           <div class="question-form__section form__section">
             <p class="question-form__field question-form__field--half form__field">
@@ -177,99 +191,101 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__column page-footer__column--icons">
-        <a class="page-footer__logo logo logo--footer">
-          <img src="img/logo-footer.svg" width="216" height="52" alt="Логотип Smart Device">
-        </a>
-        <p class="page-footer__company">1999-2018 SD Service Devices</p>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="https://www.facebook.com/htmlacademy">
-                <svg class="social__icon" width="27" height="27">
-                  <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Фейсбуке</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://www.facebook.com/htmlacademy">
-                <svg class="social__icon" width="26.6" height="26">
-                  <use xlink:href="img/sprite_auto.svg#icon-od"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Одноклассниках</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="https://www.facebook.com/htmlacademy">
-                <svg class="social__icon" width="26.9" height="26">
-                  <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
-                </svg>
-                <span class="visually-hidden">Мы в Контакте</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="page-footer__navigation">
-        <div class="page-footer__column page-footer__column--web section">
-          <h2 class="section__title">Разделы сайта</h2>
-          <div class="section__wrapper">
-            <ul class="section__list section__list--web">
-              <li class="section__item">
-                <a class="section__link" href="#">О компании</a>
+    <div class="page-footer__container">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__column page-footer__column--icons">
+          <a class="page-footer__logo logo logo--footer">
+            <img src="img/logo-footer.svg" width="216" height="52" alt="Логотип Smart Device">
+          </a>
+          <p class="page-footer__company">1999-2018 SD Service Devices</p>
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="https://www.facebook.com/htmlacademy">
+                  <svg class="social__icon" width="27" height="27">
+                    <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
+                  </svg>
+                  <span class="visually-hidden">Мы в Фейсбуке</span>
+                </a>
               </li>
-              <li class="section__item"><a class="section__link" href="#">Продукты</a>
+              <li class="social__item">
+                <a class="social__link" href="https://www.facebook.com/htmlacademy">
+                  <svg class="social__icon" width="26.6" height="26">
+                    <use xlink:href="img/sprite_auto.svg#icon-od"></use>
+                  </svg>
+                  <span class="visually-hidden">Мы в Одноклассниках</span>
+                </a>
               </li>
-              <li class="section__item">
-                <a class="section__link" href="#">Производство печатных плат</a>
-              </li>
-              <li class="section__item">
-                <a class="section__link" href="#">Монтаж печатных плат</a>
-              </li>
-            </ul>
-            <ul class="section__list section__list--web">
-              <li class="section__item">
-                <a class="section__link" href="#">Комплектующие</a>
-              </li>
-              <li class="section__item">
-                <a class="section__link" href="#">Доставка</a>
-              </li>
-              <li class="section__item">
-                <a class="section__link" href="#">Контакты</a>
+              <li class="social__item">
+                <a class="social__link" href="https://www.facebook.com/htmlacademy">
+                  <svg class="social__icon" width="26.9" height="26">
+                    <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+                  </svg>
+                  <span class="visually-hidden">Мы в Контакте</span>
+                </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="page-footer__column page-footer__column--office section">
-          <h2 class="section__title">Наш офис</h2>
-          <div class="section__list">
-            <p class="section__item">
-              <a class="section__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
-            </p>
-            <p class="section__item">
-              <a class="section__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
-            </p>
-            <p class="section__item">
-              <a class="section__link" href="tel:+79250038767">+7 (925) 003-87-67</a>
-            </p>
-            <p class="section__item">
-              <a class="section__link" href="tel:+792692608079">+7 (926) 926-080-79</a>
-            </p>
+        <div class="page-footer__navigation">
+          <div class="page-footer__column page-footer__column--web section">
+            <h2 class="section__title">Разделы сайта</h2>
+            <div class="section__wrapper">
+              <ul class="section__list section__list--web">
+                <li class="section__item">
+                  <a class="section__link" href="#">О компании</a>
+                </li>
+                <li class="section__item"><a class="section__link" href="#">Продукты</a>
+                </li>
+                <li class="section__item">
+                  <a class="section__link" href="#">Производство печатных плат</a>
+                </li>
+                <li class="section__item">
+                  <a class="section__link" href="#">Монтаж печатных плат</a>
+                </li>
+              </ul>
+              <ul class="section__list section__list--web">
+                <li class="section__item">
+                  <a class="section__link" href="#">Комплектующие</a>
+                </li>
+                <li class="section__item">
+                  <a class="section__link" href="#">Доставка</a>
+                </li>
+                <li class="section__item">
+                  <a class="section__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-footer__column page-footer__column--office section">
+            <h2 class="section__title">Наш офис</h2>
+            <div class="section__list">
+              <p class="section__item">
+                <a class="section__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
+              </p>
+              <p class="section__item">
+                <a class="section__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+              </p>
+              <p class="section__item">
+                <a class="section__link" href="tel:+79250038767">+7 (925) 003-87-67</a>
+              </p>
+              <p class="section__item">
+                <a class="section__link" href="tel:+792692608079">+7 (926) 926-080-79</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text copyright__text--extra">Все права защищены</p>
-      <p class="copyright__text copyright__text--extra">1999-2018 SD Service Devices</p>
-      <p class="copyright__text">
-        <a class="copyright__link" href="#">Условия конфиденциальности</a>
-      </p>
-      <p class="copyright__text">Developed by
-        <a class="copyright__link" href="#">wow studio</a>
-      </p>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text copyright__text--extra">Все права защищены</p>
+        <p class="copyright__text copyright__text--extra">1999-2018 SD Service Devices</p>
+        <p class="copyright__text">
+          <a class="copyright__link" href="#">Условия конфиденциальности</a>
+        </p>
+        <p class="copyright__text">Developed by
+          <a class="copyright__link" href="#">wow studio</a>
+        </p>
+      </div>
     </div>
   </footer>
 
@@ -289,7 +305,7 @@
         </div>
         <div class="modal__section form__section">
           <label class="visually-hidden" for="modal-question">Ваш вопрос</label>
-          <textarea id="modal-question" name="modal-question" placeholder="Ваш вопрос"></textarea>
+          <textarea id="modal-question" name="modal-question" placeholder="Ваш вопрос" required></textarea>
         </div>
         <div class="modal__section form__section">
           <button class="modal__button form__button" type="submit">Отправить</button>
@@ -301,8 +317,15 @@
         </div>
       </form>
     </div>
+    <button class="modal__close" type="button">Закрыть
+      <svg class="modal__icon" width="16.5" height="16.5">
+        <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+      </svg>
+    </button>
   </section>
   <div class="overlay"></div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

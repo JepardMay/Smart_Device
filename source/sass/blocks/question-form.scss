@@ -1,18 +1,20 @@
 .question-form {
   padding: 89px 0;
   padding-left: 50.5%;
-  padding-bottom: 110px;
+  padding-bottom: 112px;
   background-image: url("../img/paper_airplane.png");
   background-repeat: no-repeat;
   background-position: 25% 158px;
 }
 
 .question-form__text {
-  margin-bottom: 8px;
+  width: 61%;
+  margin-bottom: 12px;
 }
 
 .question-form__extra {
-  margin-bottom: 50px;
+  width: 61%;
+  margin-bottom: 47px;
 }
 
 .question-form__form {
@@ -68,12 +70,14 @@
   }
 
   .question-form__text {
+    width: 100%;
     margin-bottom: 16px;
   }
 
   .question-form__extra {
+    width: 100%;
     margin: 0;
-    margin-bottom: 51px;
+    margin-bottom: 52px;
   }
 
   .question-form__form {
@@ -95,12 +99,12 @@
   }
 
   .question-form__text {
-    margin-bottom: 9px;
+    margin-bottom: 10px;
   }
 
   .question-form__extra {
     margin: 0;
-    margin-bottom: 21px;
+    margin-bottom: 22px;
   }
 
   .question-form textarea {

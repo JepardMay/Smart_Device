@@ -55,6 +55,35 @@
   margin-left: 39px;
 }
 
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 20.5px;
+  height: 20.5px;
+  padding: 0;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $contrast-color;
+    outline: none;
+  }
+
+  &:hover .modal__icon,
+  &:focus .modal__icon {
+    fill: $bright-color;
+  }
+}
+
+.modal__icon {
+  fill: $contrast-color;
+}
+
 .modal--show {
   display: block;
 }

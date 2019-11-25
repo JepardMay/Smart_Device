@@ -12,18 +12,17 @@
 .about-company__title {
   @include font(36px, 51px);
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   font-family: $font-additional;
   font-weight: normal;
 }
 
 .about-company__text {
-  @include font(16px,22px);
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 
   &:last-of-type {
-    margin-bottom: 37px;
+    margin-bottom: 41px;
   }
 }
 
@@ -32,7 +31,7 @@
   @include font(14px, 16px);
   display: inline-block;
   min-height: 45px;
-  margin-bottom: 110px;
+  margin-bottom: 108px;
   padding: 14px 5%;
   text-align: center;
   vertical-align: middle;
@@ -56,7 +55,7 @@
 @media (max-width: $tablet-width) {
   .about-company {
     padding-right: 3%;
-    padding-left: 27.8%;
+    padding-left: 27.5%;
     background-image: url("../img/background-year-tablet.png");
     background-position: 0 -3px;
   }
@@ -67,10 +66,10 @@
   }
 
   .about-company__text {
-    margin-bottom: 18px;
+    margin-bottom: 23px;
 
     &:last-of-type {
-      margin-bottom: 33px;
+      margin-bottom: 36px;
     }
   }
 
@@ -119,7 +118,7 @@
   }
 
   .about-company__more {
-    margin-bottom: 61px;
+    margin-bottom: 60px;
     padding: 13px 16%;
   }
 }

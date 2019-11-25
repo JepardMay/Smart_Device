@@ -1,11 +1,12 @@
 .main-nav {
   max-width: 1920px;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 34px;
-  padding-right: 13.5%;
+  padding-top: 30px;
+  padding-right: 13.2%;
   padding-left: 13.3%;
 }
 
@@ -88,8 +89,8 @@
   justify-content: center;
   align-items: center;
   min-height: 45px;
-  margin-left: 3.1%;
-  padding: 0 1.9%;
+  margin-left: 3.4%;
+  padding: 14px 1.9%;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -110,7 +111,7 @@
 
 @media (max-width: $tablet-width) {
   .main-nav {
-    padding-top: 19px;
+    padding-top: 27px;
     padding-right: 3%;
     padding-left: 3.3%;
   }
@@ -124,7 +125,7 @@
     }
 
     &::after {
-      top: 10px;
+      top: 11px;
     }
   }
 
@@ -156,11 +157,19 @@
   .main-nav {
     padding-top: 15px;
     padding-right: 4.5%;
-    padding-left: 4.8%;
+    padding-left: 5%;
   }
 
   .main-nav__toggle {
     margin-right: 1%;
+
+    &::before {
+      top: 1px;
+    }
+
+    &::after {
+      top: 12px;
+    }
   }
 
   .main-nav__link {

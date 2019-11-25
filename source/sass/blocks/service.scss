@@ -2,7 +2,7 @@
   margin: 0 auto;
   width: 100%;
   padding: 89px 19.5%;
-  padding-bottom: 78px;
+  padding-bottom: 81px;
   color: $contrast-color;
   background-color: $dark-color;
 }
@@ -10,7 +10,7 @@
 .service__text {
   @include font(36px, 51px);
   display: block;
-  margin-bottom: 52px;
+  margin-bottom: 49px;
   font-family: $font-additional;
   font-weight: normal;
 }
@@ -25,11 +25,11 @@
   display: flex;
   position: relative;
   width: 31.6%;
-  min-height: 614px;
+  min-height: 616px;
   margin-bottom: 45px;
   margin-right: 2.5%;
 
-  &:last-child {
+  &:nth-child(3n) {
     margin-right: 0;
   }
 
@@ -39,15 +39,15 @@
 }
 
 .service__item--production {
-  background-image: url("../../img/service-production.png");
+  background-image: url("../img/service-production.png");
 }
 
 .service__item--installation {
-  background-image: url("../../img/service-installation.png");
+  background-image: url("../img/service-installation.png");
 }
 
 .service__item--components {
-  background-image: url("../../img/service-components.png");
+  background-image: url("../img/service-components.png");
 }
 
 .service__link {
@@ -57,18 +57,21 @@
   color: $contrast-color;
   border: 1px solid transparent;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: $contrast-color;
     text-decoration: underline;
-  }
-
-  &:hover .service__arrow {
-    background-color: $contrast-color;
-    fill: $bright-color;
-  }
-
-  &:focus {
     outline: none;
+  }
+
+  &:hover .service__arrow,
+  &:focus .service__arrow {
+    background-color: $contrast-color;
+  }
+
+  &:hover .service__icon,
+  &:focus .service__icon {
+    fill: $bright-color;
   }
 }
 
@@ -99,14 +102,14 @@
 
 @media (max-width: $tablet-width) {
   .service {
-    padding: 50px 3.3%;
+    padding: 48px 3.4%;
     padding-bottom: 76px;
   }
 
   .service__text {
     @include font(32px, 45px);
     width: 89%;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
   }
 
   .service__item {
@@ -120,15 +123,15 @@
   }
 
   .service__item--production {
-    background-image: url("../../img/service-production-tablet.png");
+    background-image: url("../img/service-production-tablet.png");
   }
 
   .service__item--installation {
-    background-image: url("../../img/service-installation-tablet.png");
+    background-image: url("../img/service-installation-tablet.png");
   }
 
   .service__item--components {
-    background-image: url("../../img/service-components-tablet.png");
+    background-image: url("../img/service-components-tablet.png");
   }
 
   .service__title {
@@ -144,8 +147,8 @@
 
 @media (max-width: $mobile-width) {
   .service {
-    padding: 44px 4.6%;
-    padding-bottom: 61px;
+    padding: 45px 4.6%;
+    padding-bottom: 62px;
   }
 
   .service__text {
@@ -156,20 +159,20 @@
   }
 
   .service__item {
-    min-height: 243px;
+    min-height: 242px;
     margin-bottom: 29px;
   }
 
   .service__item--production {
-    background-image: url("../../img/service-production-mobile.png");
+    background-image: url("../img/service-production-mobile.png");
   }
 
   .service__item--installation {
-    background-image: url("../../img/service-installation-mobile.png");
+    background-image: url("../img/service-installation-mobile.png");
   }
 
   .service__item--components {
-    background-image: url("../../img/service-components-mobile.png");
+    background-image: url("../img/service-components-mobile.png");
   }
 
   .service__title {

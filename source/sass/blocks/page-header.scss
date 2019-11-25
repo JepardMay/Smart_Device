@@ -3,8 +3,7 @@
   width: 100%;
   color: $contrast-color;
   background-color: $dark-color;
-  background-image: url("../../img/screen-pattern.png;"),
-    url("../../img/screen-background.png");
+  background-image: url("../img/screen-background.png");
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
@@ -12,12 +11,12 @@
 
 @media (max-width: $tablet-width) {
   .page-header {
-    background-image: url("../../img/screen-background-tablet.jpg");
+    background-image: url("../img/screen-background-tablet.jpg");
   }
 }
 
 @media (max-width: $mobile-width) {
   .page-header {
-    background-image: url("../../img/screen-background-mobile.jpg");
+    background-image: url("../img/screen-background-mobile.jpg");
   }
 }
