@@ -4,19 +4,21 @@
   z-index: 50;
   top: 50%;
   left: 50%;
-  margin-top: -286.5px;
-  margin-left: -244px;
+  margin-top: -384px;
+  margin-left: -243px;
   width: 486px;
-  padding: 22px 39px;
-  padding-bottom: 55px;
+  padding: 31px 39px;
+  padding-bottom: 36px;
+  overflow: auto;
 }
 
 .modal__text {
-  margin-bottom: 6px;
+  @include font(28px, 39px);
+  margin-bottom: 13px;
 }
 
 .modal__extra {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   padding-right: 20px;
 }
 
@@ -26,13 +28,13 @@
 }
 
 .modal__form input[type="checkbox"] + .modal__agreement::before {
-  top: 6px;
-  left: -38px;
+  top: 2px;
+  left: -49px;
 }
 
 .modal__form input[type="checkbox"]:checked + .modal__agreement::after {
-  top: 11px;
-  left: -34px;
+  top: 7px;
+  left: -46px;
 }
 
 .modal textarea {
@@ -48,11 +50,12 @@
 }
 
 .modal__button {
-  margin-top: -6px;
+  margin-top: -3px;
 }
 
 .modal__agreement {
-  margin-left: 39px;
+  margin-top: 35px;
+  margin-left: 47px;
 }
 
 .modal__close {

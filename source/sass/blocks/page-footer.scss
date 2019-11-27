@@ -17,10 +17,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1920px;
-  padding-top: 63px;
+  padding-top: 64px;
   padding-right: 12.2%;
   padding-left: 13.2%;
-  padding-bottom: 57px;
+  padding-bottom: 58px;
 
   &::after {
     content: "";
@@ -52,13 +52,13 @@
 }
 
 .page-footer__logo {
-  margin-bottom: 52px;
+  margin-bottom: 55px;
 }
 
 .page-footer__company {
   display: none;
 
-  @include font(12px, 24px);
+  @include font(13px, 24px);
   margin: 0;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -74,13 +74,13 @@
     display: flex;
     width: 100%;
     padding-top: 18px;
-    padding-right: 1.8%;
+    padding-right: 3%;
     padding-left: 3.3%;
-    padding-bottom: 23px;
+    padding-bottom: 26px;
   }
 
   .page-footer__logo {
-    margin-right: 10.8%;
+    margin-right: 11.8%;
     margin-bottom: 0;
   }
 
@@ -92,9 +92,9 @@
   .page-footer__navigation {
     position: relative;
     width: 100%;
-    padding: 36px 1.2%;
+    padding: 39px 1.2%;
     padding-left: 3.3%;
-    padding-bottom: 33px;
+    padding-bottom: 35px;
 
     &::before {
       content: "";
@@ -121,18 +121,18 @@
   .page-footer__column--icons {
     flex-direction: column;
     align-items: center;
-    padding: 42px 1.5%;
-    padding-bottom: 44px;
+    padding: 46px 1.5%;
+    padding-bottom: 48px;
   }
 
   .page-footer__logo {
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
   }
 
   .page-footer__company {
     margin-top: 0;
-    margin-bottom: 29px;
+    margin-bottom: 32px;
   }
 
   .page-footer__navigation {
@@ -144,7 +144,7 @@
   .page-footer__column--office {
     width: 100%;
     padding: 0 5%;
-    padding-top: 28px;
+    padding-top: 30px;
   }
 
   .page-footer__column--office {

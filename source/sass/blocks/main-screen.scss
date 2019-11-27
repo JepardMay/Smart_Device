@@ -23,7 +23,7 @@
   @include font(80px, 94px);
   display: flex;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
@@ -33,12 +33,12 @@
   position: relative;
   margin: 0;
   margin-left: 12.2%;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 13px;
+    top: 17px;
     left: -92px;
     width: 66px;
     height: 2px;
@@ -50,6 +50,7 @@
   @include font-bold;
   @include font(16px, 19px);
   display: inline-block;
+  max-width: 408px;
   min-height: 55px;
   margin-left: 12.4%;
   padding: 17px 5.8%;
@@ -81,7 +82,8 @@
   @include font(14px, 14px);
   position: absolute;
   bottom: 29px;
-  left: -34px;
+  left: -38px;
+  color: $contrast-color;
   opacity: 0.5;
   transform: rotate(-90deg);
 
@@ -97,20 +99,20 @@
 }
 
 .main-screen__image {
-  width: 698px;
+  width: 706px;
 }
 
 @media (max-width: $tablet-width) {
   .main-screen {
     padding-top: 41px;
-    padding-left: 11.4%;
+    padding-left: 11.5%;
     padding-right: 0;
-    padding-bottom: 159px;
+    padding-bottom: 163px;
   }
 
   .main-screen__wrapper {
     width: 100%;
-    padding-top: 72px;
+    padding-top: 77px;
   }
 
   .main-screen__title {
@@ -121,7 +123,7 @@
   .main-screen__job {
     @include font(18px, 28px);
     margin-left: 11%;
-    margin-bottom: 52px;
+    margin-bottom: 56px;
 
     &::before {
       top: 16px;
@@ -150,7 +152,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 36px 0;
-    padding-bottom: 65px;
+    padding-bottom: 70px;
   }
 
   .main-screen__wrapper {
@@ -162,12 +164,12 @@
 
   .main-screen__title {
     @include font(40px, 47px);
-    margin-bottom: 21px;
+    margin-bottom: 28px;
   }
 
   .main-screen__job {
     @include font(16px, 25px);
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     margin-left: 17.7%;
   }
 

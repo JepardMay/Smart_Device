@@ -9,7 +9,7 @@
   flex-wrap: wrap;
   padding: 111px 19.6%;
   padding-left: 19.5%;
-  padding-bottom: 70px;
+  padding-bottom: 78px;
 }
 
 .advantages__item {
@@ -19,7 +19,7 @@
   margin-right: 2.6%;
   margin-bottom: 30px;
   padding: 93px 3.5%;
-  padding-right: 2.8%;
+  padding-right: 3%;
   padding-bottom: 66px;
   background-color: $contrast-color;
   border: 1px solid $border-color;
@@ -65,7 +65,7 @@
 .advantages__title {
   @include font(24px, 34px);
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-family: $font-additional;
   font-weight: normal;
   color: $bright-color;
@@ -77,21 +77,22 @@
 
 @media (max-width: $tablet-width) {
   .advantages__list {
-    padding: 53px 3%;
-    padding-bottom: 21px;
+    padding: 54px 3.3%;
+    padding-bottom: 25px;
   }
 
   .advantages__item {
     width: 47.9%;
-    min-height: 232px;
+    min-height: 234px;
     margin-right: 4.1%;
     padding: 64px 3.4%;
-    padding-right: 2%;
-    padding-bottom: 20px;
+    padding-right: 2.8%;
+    padding-bottom: 23px;
+    border-left: 2px solid $bright-color;
   }
 
   .advantages__title {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
   }
 
   .advantages__title--detective {
@@ -120,20 +121,20 @@
 @media (max-width: $mobile-width) {
   .advantages__list {
     flex-direction: column;
-    padding: 36px 0;
+    padding: 37px 0;
     padding-right: 5%;
     padding-left: 4.3%;
   }
 
   .advantages__item {
     width: 100%;
-    min-height: 220px;
+    min-height: 231px;
     margin-right: 0;
-    margin-bottom: 19px;
-    padding-top: 65px;
+    margin-bottom: 20px;
+    padding-top: 71px;
     padding-left: 7.9%;
-    padding-bottom: 21px;
-    padding-right: 2px;
+    padding-bottom: 28px;
+    padding-right: 15px;
   }
 
   .advantages__item--hired {

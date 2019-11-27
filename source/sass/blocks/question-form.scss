@@ -1,20 +1,21 @@
 .question-form {
   padding: 89px 0;
   padding-left: 50.5%;
-  padding-bottom: 112px;
-  background-image: url("../img/paper_airplane.png");
+  padding-bottom: 111px;
+  background-image: url("../img/paper-airplane.png");
   background-repeat: no-repeat;
   background-position: 25% 158px;
 }
 
 .question-form__text {
+  @include font(36px, 51px);
   width: 61%;
   margin-bottom: 12px;
 }
 
 .question-form__extra {
   width: 61%;
-  margin-bottom: 47px;
+  margin-bottom: 48px;
 }
 
 .question-form__form {
@@ -22,7 +23,7 @@
 }
 
 .question-form__form input[type="checkbox"] + .question-form__agreement::before {
-  top: 0;
+  top: 2px;
   left: -32px;
 }
 
@@ -33,7 +34,7 @@
 
 .question-form input,
 .question-form textarea {
-  padding: 14px 16px;
+  padding: 11px 20px;
   font-family: inherit;
 }
 
@@ -44,7 +45,7 @@
 .question-form__section {
   display: flex;
   justify-content: space-between;
-  margin-top: 41px;
+  margin-top: 43px;
 
   &:first-child {
     margin-top: 0;
@@ -58,53 +59,60 @@
 
 .question-form__agreement {
   margin-top: 8px;
-  margin-left: 39px;
+  margin-left: 41px;
 }
 
 @media (max-width: $tablet-width) {
   .question-form {
-    padding: 77px 11%;
-    padding-left: 12%;
-    padding-bottom: 101px;
+    padding: 81px 11.6%;
+    padding-bottom: 104px;
     background-image: none;
   }
 
   .question-form__text {
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
   }
 
   .question-form__extra {
     width: 100%;
     margin: 0;
-    margin-bottom: 52px;
+    margin-bottom: 53px;
   }
 
   .question-form__form {
     width: 100%;
   }
 
+  .question-form textarea {
+    height: 158px;
+  }
+
   .question-form__section {
     &:last-child {
-      margin-top: 49px;
+      margin-top: 47px;
     }
+  }
+
+  .question-form__agreement {
+    margin-left: 42px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .question-form {
-    padding: 27px 4.3%;
-    padding-bottom: 38px;
+    padding: 28px 4.3%;
+    padding-bottom: 43px;
     background-image: none;
   }
 
   .question-form__text {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .question-form__extra {
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 25px;
   }
 
   .question-form textarea {
@@ -113,10 +121,10 @@
 
   .question-form__section {
     flex-direction: column;
-    margin-top: 26px;
+    margin-top: 33px;
 
     &:last-child {
-      margin-top: 28px;
+      margin-top: 30px;
     }
   }
 
@@ -125,11 +133,11 @@
   }
 
   .question-form__field--half {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 
   .question-form__agreement {
     margin-top: 0;
-    margin-left: 33px;
+    margin-left: 34px;
   }
 }

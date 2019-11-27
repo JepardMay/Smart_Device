@@ -6,7 +6,6 @@
 }
 
 .form__text {
-  @include font(36px, 51px);
   display: block;
   font-family: $font-additional;
   font-weight: normal;
@@ -36,19 +35,23 @@
 
 .form input,
 .form textarea {
+  @include font(16px, 22px);
   width: 100%;
   font-family: inherit;
   color: $contrast-color;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
+  border-radius: 0;
 
   &::placeholder {
-    @include font(16px, 22px);
+    margin: 0;
+    padding: 0;
     color: $contrast-color;
   }
 
   &:hover,
   &:focus {
+    color: $bright-color;
     background-color: rgba(255, 255, 255, 0.9);
     outline: none;
   }
@@ -60,11 +63,11 @@
 }
 
 .form input {
-  height: 50px;
+  height: 52px;
 }
 
 .form textarea {
-  resize: vertical;
+  resize: none;
 }
 
 .form__button {
