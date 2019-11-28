@@ -69,9 +69,9 @@
   if (form) {
     form.addEventListener('submit', function () {
       if (isStorageSupport) {
-        localStorage.setItem('modal-name', modalName.value);
-        localStorage.setItem('modal-phone', modalPhone.value);
-        localStorage.setItem('modal-question', modalQuestion.value);
+        localStorage.setItem('modal-name', login.value);
+        localStorage.setItem('modal-phone', login.value);
+        localStorage.setItem('modal-question', login.value);
       }
     });
   }

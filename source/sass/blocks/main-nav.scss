@@ -62,14 +62,14 @@
   color: $contrast-color;
   margin-left: 6.1%;
 
-  &:hover,
   &:hover {
-    opacity: 0.4;
+    opacity: 0.6;
+    text-decoration: underline;
   }
 
-  &:focus,
   &:focus {
     opacity: 0.8;
+    outline: none;
   }
 }
 
@@ -106,9 +106,7 @@
   &:focus {
     color: $bright-color;
     background-color: $contrast-color;
-  }
-
-  &:focus {
+    transition-duration: 0.5s;
     outline: none;
   }
 }

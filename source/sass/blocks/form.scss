@@ -54,6 +54,7 @@
     color: $bright-color;
     background-color: rgba(255, 255, 255, 0.9);
     outline: none;
+    transition-duration: 0.5s;
   }
 
   &:hover::placeholder,
@@ -93,6 +94,7 @@
     color: $bright-color;
     background-color: $contrast-color;
     outline: none;
+    transition-duration: 0.5s;
   }
 }
 
@@ -108,17 +110,5 @@
   &:focus {
     text-decoration: underline;
     outline: none;
-  }
-}
-
-@media (max-width: $tablet-width) {
-  .form__text {
-    @include font(31px, 45px);
-  }
-}
-
-@media (max-width: $mobile-width) {
-  .question-form__text {
-    @include font(28px, 39px);
   }
 }

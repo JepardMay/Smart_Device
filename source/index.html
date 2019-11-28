@@ -120,73 +120,79 @@
       <a class="about-company__more" href="#">Подробнее</a>
     </section>
     <section class="service">
-      <h2 class="visually-hidden">Товары и услуги</h2>
-      <b class="service__text">Service Device предлагает следующие товары и услуги</b>
-      <ul class="service__list">
-        <li class="service__item service__item--production">
-          <a class="service__link" href="#">
-            <h3 class="service__title">Производство печатных плат</h3>
-            <div class="service__arrow">
-              <svg class="service__icon" width="8" height="16">
-                <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
-              </svg>
-            </div>
-          </a>
-        </li>
-        <li class="service__item service__item--installation">
-          <a class="service__link" href="#">
-            <h3 class="service__title">Монтаж печатных плат</h3>
-            <div class="service__arrow">
-              <svg class="service__icon" width="8" height="16">
-                <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
-              </svg>
-            </div>
-          </a>
-        </li>
-        <li class="service__item service__item--components">
-          <a class="service__link" href="#">
-            <h3 class="service__title service__title--components">Комплектующие для светотехники</h3>
-            <div class="service__arrow">
-              <svg class="service__icon" width="8" height="16">
-                <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
-              </svg>
-            </div>
-          </a>
-        </li>
-      </ul>
+      <div class="service__wrapper">
+        <h2 class="visually-hidden">Товары и услуги</h2>
+        <b class="service__text">Service Device предлагает следующие товары и услуги</b>
+        <ul class="service__list">
+          <li class="service__item service__item--production">
+            <a class="service__link" href="#">
+              <h3 class="service__title">Производство печатных плат</h3>
+              <div class="service__arrow">
+                <svg class="service__icon" width="8" height="16">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="service__item service__item--installation">
+            <a class="service__link" href="#">
+              <h3 class="service__title">Монтаж печатных плат</h3>
+              <div class="service__arrow">
+                <svg class="service__icon" width="8" height="16">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="service__item service__item--components">
+            <a class="service__link" href="#">
+              <h3 class="service__title service__title--components">Комплектующие для светотехники</h3>
+              <div class="service__arrow">
+                <svg class="service__icon" width="8" height="16">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="question-form form" id="question-form">
-      <h2 class="visually-hidden">Задать вопрос</h2>
-      <b class="question-form__text form__text">Остались вопросы? Задайте их нам!</b>
-      <p class="question-form__extra form__extra">Мы проконсультируем Вас бесплатно</p>
-      <div class="question-form__form form__form">
-        <form method="post">
-          <div class="question-form__section form__section">
-            <p class="question-form__field question-form__field--half form__field">
-              <label class="visually-hidden" for="user-name">Имя</label>
-              <input id="user-name" type="text" name="user-name" placeholder="Имя" required>
-            </p>
-            <p class="question-form__field form__field">
-              <label class="visually-hidden" for="user-phone">Телефон</label>
-              <input id="user-phone" type="tel" name="user-phone" placeholder="Телефон" required>
-            </p>
-          </div>
-          <div class="question-form__section form__section">
-            <label class="visually-hidden" for="user-question">Ваш вопрос</label>
-            <textarea id="user-question" name="user-question" placeholder="Ваш вопрос" required></textarea>
-          </div>
-          <div class="question-form__section form__section">
-            <p class="question-form__field question-form__field--half form__field">
-              <button class="question-form__button form__button" type="submit">Задать вопрос</button>
-            </p>
-            <p class="question-form__field form__field">
-              <input class="visually-hidden" id="user-agreement" type="checkbox" name="user-agreement" checked required>
-              <label class="question-form__agreement form__agreement" for="user-agreement">Я согласен на обработку
-                персональных
-                данных</label>
-            </p>
-          </div>
-        </form>
+      <div class="question-form__wrapper">
+        <h2 class="visually-hidden">Задать вопрос</h2>
+        <b class="question-form__text form__text">Остались вопросы? Задайте их нам!</b>
+        <p class="question-form__extra form__extra">Мы проконсультируем Вас бесплатно</p>
+        <div class="question-form__form form__form">
+          <form method="post">
+            <div class="question-form__section form__section">
+              <p class="question-form__field question-form__field--half form__field">
+                <label class="visually-hidden" for="user-name">Имя</label>
+                <input id="user-name" type="text" name="user-name" placeholder="Имя" required>
+              </p>
+              <p class="question-form__field form__field">
+                <label class="visually-hidden" for="user-phone">Телефон</label>
+                <input class="js--phone-mask" id="user-phone" type="tel" name="user-phone" placeholder="Телефон"
+                  required>
+              </p>
+            </div>
+            <div class="question-form__section form__section">
+              <label class="visually-hidden" for="user-question">Ваш вопрос</label>
+              <textarea id="user-question" name="user-question" placeholder="Ваш вопрос" required></textarea>
+            </div>
+            <div class="question-form__section form__section">
+              <p class="question-form__field question-form__field--half form__field">
+                <button class="question-form__button form__button" type="submit">Задать вопрос</button>
+              </p>
+              <p class="question-form__field form__field">
+                <input class="visually-hidden" id="user-agreement" type="checkbox" name="user-agreement" checked
+                  required>
+                <label class="question-form__agreement form__agreement" for="user-agreement">Я согласен на обработку
+                  персональных
+                  данных</label>
+              </p>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
@@ -301,7 +307,7 @@
         </div>
         <div class="modal__section form__section">
           <label class="visually-hidden" for="modal-phone">Телефон</label>
-          <input id="modal-phone" type="tel" name="modal-phone" placeholder="Телефон" required>
+          <input class="js--phone-mask" id="modal-phone" type="tel" name="modal-phone" placeholder="Телефон" required>
         </div>
         <div class="modal__section form__section">
           <label class="visually-hidden" for="modal-question">Ваш вопрос</label>
@@ -325,8 +331,11 @@
   </section>
   <div class="overlay"></div>
 
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/masks.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/footer-menu.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 
 </html>

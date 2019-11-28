@@ -1,11 +1,12 @@
 .about-company {
   margin: 0 auto;
   width: 100%;
-  padding-right: 19.5%;
-  padding-left: 28.8%;
+  max-width: 1550px;
+  padding-right: 10.5%;
+  padding-left: 19.4%;
   background-image: url("../img/background-year.png");
   background-repeat: no-repeat;
-  background-position: 20.3% 3px;
+  background-position: 12% 3px;
   background-size: initial;
 }
 
@@ -31,7 +32,7 @@
   @include font(14px, 16px);
   display: inline-block;
   min-height: 45px;
-  margin-bottom: 108px;
+  margin-bottom: 110px;
   padding: 14px 5%;
   text-align: center;
   vertical-align: middle;
@@ -45,6 +46,7 @@
   &:focus {
     color: $contrast-color;
     background-color: $bright-color;
+    transition-duration: 0.5s;
   }
 
   &:focus {

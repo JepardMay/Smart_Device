@@ -4,9 +4,9 @@
   z-index: 50;
   top: 50%;
   left: 50%;
-  margin-top: -384px;
-  margin-left: -243px;
   width: 486px;
+  margin-left: -243px;
+  transform: translateY(-50%);
   padding: 31px 39px;
   padding-bottom: 36px;
   overflow: auto;
