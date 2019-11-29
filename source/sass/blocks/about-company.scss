@@ -4,18 +4,27 @@
   max-width: 1550px;
   padding-right: 10.5%;
   padding-left: 19.4%;
-  background-image: url("../img/background-year.png");
-  background-repeat: no-repeat;
-  background-position: 12% 3px;
-  background-size: initial;
 }
 
 .about-company__title {
   @include font(36px, 51px);
+  position: relative;
   margin: 0;
   margin-bottom: 21px;
   font-family: $font-additional;
   font-weight: normal;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -22%;
+    width: 220px;
+    height: 317px;
+    background-image: url("../img/background-year.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .about-company__text {
@@ -58,13 +67,19 @@
   .about-company {
     padding-right: 3%;
     padding-left: 27.5%;
-    background-image: url("../img/background-year-tablet.png");
-    background-position: 0 0;
   }
 
   .about-company__title {
     @include font(32px, 45px);
     margin-bottom: 28px;
+
+    &::before {
+      left: -40%;
+      width: 244px;
+      height: 362px;
+      background-image: url("../img/background-year-tablet.png");
+      background-position: 0 0;
+    }
   }
 
   .about-company__text {
@@ -102,12 +117,15 @@
   .about-company {
     padding-right: 10px;
     padding-left: 4.7%;
-    background-image: none;
   }
 
   .about-company__title {
     @include font(28px, 39px);
     margin-bottom: 20px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .about-company__text {

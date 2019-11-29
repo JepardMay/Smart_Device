@@ -1,25 +1,29 @@
 .copyright {
   display: flex;
-  justify-content: space-between;
   padding: 15px 4.5%;
 }
 
 .copyright__text {
   @include font(13px, 24px);
+  min-width: 165px;
   margin: 0;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   opacity: 0.5;
-  margin-right: 10.2%;
+  margin-right: 0.2%;
 
   &:first-child {
-    margin-right: 4.9%;
+    margin-right: 3.9%;
   }
 
   &:last-child {
     margin-left: auto;
     margin-right: 0;
   }
+}
+
+.copyright__text--company {
+  margin-right: 10%;
 }
 
 .copyright__link {
@@ -41,7 +45,8 @@
     padding-left: 3.4%;
   }
 
-  .copyright__text--extra {
+  .copyright__text--extra,
+  .copyright__text--company {
     display: none;
   }
 }
