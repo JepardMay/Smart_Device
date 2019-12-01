@@ -34,6 +34,11 @@
   margin-bottom: 48px;
 }
 
+.question-form__form input[type="checkbox"] {
+  top: 50%;
+  left: 18px;
+}
+
 .question-form__form input[type="checkbox"] + .question-form__agreement::before {
   top: 2px;
   left: -32px;
@@ -65,6 +70,7 @@
 }
 
 .question-form__field {
+  position: relative;
   width: 47.2%;
   margin: 0;
 }

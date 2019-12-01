@@ -27,6 +27,11 @@
   padding: 14px 22px;
 }
 
+.modal__form input[type="checkbox"] {
+  top: 50%;
+  left: 8px;
+}
+
 .modal__form input[type="checkbox"] + .modal__agreement::before {
   top: 2px;
   left: -49px;
@@ -42,6 +47,7 @@
 }
 
 .modal__section {
+  position: relative;
   margin-bottom: 30px;
 
   &:last-child {
