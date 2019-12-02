@@ -1,9 +1,12 @@
 .question-form {
   display: flex;
   padding-left: 30.9%;
-  background-image: url("../img/form-background.png");
+  background-image: url("../img/paper-airplane.png"),
+    url("../img/form-background.png");
   background-repeat: no-repeat;
-  background-position: 100% -65px;
+  background-position: top 161px left calc(50% - 354px),
+    100% -65px;
+  background-size: 511px auto, 1920px auto;
 }
 
 .question-form__wrapper {
@@ -19,25 +22,6 @@
 
 .question-form__extra {
   margin-bottom: 48px;
-}
-
-.question-form__form {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -62px;
-    right: 120%;
-    max-width: 511px;
-    width: 100%;
-    height: 288px;
-    background-image: url("../img/paper-airplane.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: contain;
-  }
-
 }
 
 .question-form__form input[type="checkbox"] {
@@ -107,12 +91,6 @@
   .question-form__extra {
     margin: 0;
     margin-bottom: 53px;
-  }
-
-  .question-form__form {
-    &::before {
-      display: none;
-    }
   }
 
   .question-form textarea {
