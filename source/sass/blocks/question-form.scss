@@ -7,22 +7,9 @@
 }
 
 .question-form__wrapper {
-  position: relative;
   min-width: 570px;
   margin: 89px auto;
   margin-bottom: 111px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 71px;
-    left: -109%;
-    width: 511px;
-    height: 288px;
-    background-image: url("../img/paper-airplane.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
 }
 
 .question-form__text {
@@ -32,6 +19,25 @@
 
 .question-form__extra {
   margin-bottom: 48px;
+}
+
+.question-form__form {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -62px;
+    right: 120%;
+    max-width: 511px;
+    width: 100%;
+    height: 288px;
+    background-image: url("../img/paper-airplane.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+  }
+
 }
 
 .question-form__form input[type="checkbox"] {
@@ -91,10 +97,6 @@
     min-width: 100%;
     margin: 81px auto;
     margin-bottom: 103px;
-
-    &::before {
-      display: none;
-    }
   }
 
   .question-form__text {
@@ -105,6 +107,12 @@
   .question-form__extra {
     margin: 0;
     margin-bottom: 53px;
+  }
+
+  .question-form__form {
+    &::before {
+      display: none;
+    }
   }
 
   .question-form textarea {

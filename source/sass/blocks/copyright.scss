@@ -5,24 +5,27 @@
 
 .copyright__text {
   @include font(13px, 24px);
-  min-width: 165px;
+  min-width: 217px;
   margin: 0;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   opacity: 0.5;
-  margin-right: 0.2%;
+  margin-right: 2.5%;
 
   &:first-child {
+    min-width: 155px;
     margin-right: 3.9%;
   }
 
   &:last-child {
+    min-width: 192px;
     margin-left: auto;
     margin-right: 0;
   }
 }
 
 .copyright__text--company {
+  min-width: 233px;
   margin-right: 10%;
 }
 
